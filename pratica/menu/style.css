@@ -22,13 +22,34 @@ body nav ul li a {
 
 nav {
     background: var(--elements-colors-secondary);
+    padding: 25px;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+
+    padding-left: 80%;
 }
 
 nav a {
     color: var(--primary-color);
     text-decoration: none;
+    margin: 5px;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    padding: 8px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--background-color-primary);
+    
+
+    border-bottom-width: 3px;
+    border-color: #5A5A5A;
+    border-bottom-style: solid;
 }
