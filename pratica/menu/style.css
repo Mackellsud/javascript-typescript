@@ -53,3 +53,22 @@ nav a:hover {
     border-color: #5A5A5A;
     border-bottom-style: solid;
 }
+
+.home, .image-background,
+.perfil {
+    display: flex;
+}
+
+.image-background {
+    background-color: var(--elements-colors);
+    
+    height: 500px;
+    width: 612px;
+}
+
+.perfil {
+    background-color: var(--elements-colors-secondary);
+
+    height: 500px;
+    width: 612px;
+}
