@@ -1,0 +1,40 @@
+table{
+    border-collapse: collapse;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+table td, table th {
+    border: 1px solid lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+thead tr {
+    background-color: lightgray;
+    border-bottom: solid 3px #444;
+}
+
+tbody tr:hover{
+    background-color: lightgreen;
+}
+
+tfoot td {
+    text-align: left;
+}
+
+tfoot td:hover {
+    background-color: lightgreen;
+}
+
+tfoot .total {
+    text-align: right;
+}
+
+tfoot .total:hover {
+    background-color: lightcoral;
+}
+
+.responsive-table {
+    max-width: 100%;
+    overflow-x: auto;
+}
