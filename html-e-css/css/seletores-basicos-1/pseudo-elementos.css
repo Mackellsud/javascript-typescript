@@ -1,0 +1,20 @@
+/* ul li::before{
+    content: '--';
+    background-color: darkred;
+    width: 150px;
+    display: block;
+} */
+
+/* ul li::after{
+    content: '--';
+    background-color: brown;
+    width: 150px;
+    display: block;
+} */
+
+p::first-letter {
+    display: block;
+    font-size: 35px;
+    float: left;
+    margin: 0 10px 10px 0;
+}

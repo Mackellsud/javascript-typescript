@@ -40,13 +40,13 @@ input:checked + p {
     text-align: center;
 }
 
-.father .list li:first-child {
+/* .father .list li:first-child {
     background-color: chartreuse;
 }
 
 .father .list li:last-child {
     background-color: coral;
-}
+} */
 
 p {
     color: cornflowerblue;
@@ -54,4 +54,8 @@ p {
 
 p:not(.meio) {
     color: black;
+}
+
+ul li:nth-child(2) {
+    background-color: rebeccapurple;
 }
