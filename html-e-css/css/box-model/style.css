@@ -1,0 +1,19 @@
+.text {
+    background-color: brown;
+
+    /* Responsividade Attribute */
+    margin: 50px auto;
+    max-height: 100%;
+    max-width: 800px;
+    min-height: 0;
+    min-width: 0;
+
+    transition: .2s;
+
+    padding: 20px;
+    width: 100%;
+}
+
+.text:hover {
+    border-bottom: 5px solid;
+}
