@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    gap: 30px 80px; /* Shortcut onde podemos usar a largura da linha e coluna */
+    /* grid-template-columns: [one] 1fr 
+    [two] 1fr  Os nomes só aumentam a complexidade do código
+    [three] 1fr 
+    [four]; */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin: 0;
+    max-width: 1200px;
+    /* row-gap: 30px;
+    column-gap: 30px; */
+}
+
+.grid div {
+    background-color: tomato;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    background-color: aqua;
+    /* grid-column-start: one;
+    grid-column-end: four; */
+    /* grid-column: span 2 / 4; */
+    /* grid-area: 1 / 1 / 4 / 4; */
+    /* grid-area: 1 / 1 / 4 / 3; */
+}

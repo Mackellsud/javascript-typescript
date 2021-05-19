@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(243, 243, 243);
+    font-family: Ubuntu, sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 'header header' 'nav main' 'footer footer';
+    /* Passamos os nomes dos elementos para utilizarmos na definição dos elementos posteriormente*/
+}
+
+.grid div:nth-child(1) {
+    background-color: #2bcd59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.grid div:nth-child(2) {
+    background-color: #85ffa8;
+    grid-area: nav;
+}
+
+.grid div:nth-child(3) {
+    background-color: #ddd;
+    grid-area: main;
+}
+
+.grid div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: darkgreen;
+    color: white;
+    font-size: 16px;
+    grid-area: footer;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'header' 'main' 'nav' 'footer';
+    }
+}
