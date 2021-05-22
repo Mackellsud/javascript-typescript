@@ -1,0 +1,24 @@
+.main-bg {
+    background-image: url('/landing-page/assets/img/main.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section-page {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 65px;
+}

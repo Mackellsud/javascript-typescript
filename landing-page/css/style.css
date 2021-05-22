@@ -1,0 +1,29 @@
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+
+    align-items: center;
+    height: 100vh;
+
+    position: relative;
+    top: -6.5rem;
+}
+
+.home-text-content, .home-image {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.home-text-content h2 {
+    font-size: 8rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+}
