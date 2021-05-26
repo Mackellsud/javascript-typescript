@@ -4,7 +4,7 @@
     gap: var(--gap);
 
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 
     position: relative;
     top: -6.5rem;
@@ -23,9 +23,11 @@
 
 .projeto-content {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 64rem;
     text-align: center;
 
@@ -35,7 +37,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading {
@@ -69,4 +71,19 @@
     top: 3rem;
     left: -1rem;
     transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }

@@ -61,3 +61,12 @@ a {
 p {
     margin-bottom: 3rem;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 0.1rem solid var(--light-gray-color);
+}
