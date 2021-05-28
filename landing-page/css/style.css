@@ -7,7 +7,7 @@
     min-height: 100vh;
 
     position: relative;
-    top: -6.5rem;
+    /* top: -6.5rem; */
 }
 
 .home-text-content, .home-image {
@@ -86,4 +86,14 @@
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsive-table tbody tr {
+    transition: all 300ms ease-in-out;
+}
+
+.responsive-table tbody tr:hover{
+    background-color: rgb(199, 199, 199);
+    color: var(--primary-color);
+    cursor: pointer;
 }

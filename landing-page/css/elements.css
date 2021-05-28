@@ -62,11 +62,33 @@ p {
     margin-bottom: 3rem;
 }
 
+.resposive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
 table {
-    width: 100%;
     border-collapse: collapse;
+    min-width: 360px;
+    width: 100%;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+    text-align: left;
 }
 
 table td, table th {
     border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+    white-space: nowrap;
+
+    padding: 1rem;
+}
+
+tfoot td, table th {
+    background: var(--light-gray-color);
+    font-size: 1.4rem;
 }
