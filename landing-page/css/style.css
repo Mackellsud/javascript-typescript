@@ -97,3 +97,11 @@
     color: var(--primary-color);
     cursor: pointer;
 }
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form fieldset {
+    border: none;
+}
