@@ -15,11 +15,14 @@
 </head>
 
 <body>
+    <input type="checkbox" class="close-menu" id="close-menu" role="button" aria-label="Close menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#home">Logotipo</a></h1>
+            <h1 onclick="document.getElementById('close-menu').checked = false"><a href="#home">Logotipo</a></h1>
                 <nav>
-                    <ul>
+                    <ul onclick="document.getElementById('close-menu').checked = false">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#projeto">About</a></li>
                         <li><a href="#describe-work">Projects</a></li>
@@ -234,17 +237,17 @@
 
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome..." required>
                     </div>
 
                     <div class="form-group">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" required>
+                        <input type="text" name="last-name" id="last-name" required placeholder="Digite seu sobrenome...">
                     </div>
 
                     <div class="form-group">
-                        <label for="femail">E-mail</label>
-                        <input type="email" name="femail" id="femail" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required> 
                     </div>
 
                     <div class="form-group text">
@@ -252,14 +255,35 @@
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Describe your text here..."></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <button type="submit" onclick="btnForm()">Send message</button>
+                    <div class="form-group text">
+                        <button id="btnForm" type="submit" onclick="btnForm()">Send message</button>
                     </div>
                 </fieldset>
             </div>
         </div>
     </section>
 
+    <footer id="footer" class='white-bg rodape'>
+        <section>
+            <ul class="social">
+                <li><a href="https://github.com/michaelmdrs" target="_blank"><img src="./assets/img/github.png" alt="Github"></a></li>
+                <li><a href="https://www.linkedin.com/in/michael-santos-d/" target="_blank"><img src="./assets/img/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="https://twitter.com/mackellsud"><img src="./assets/img/logotipo-social-do-twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </section>
+        <p><a href="#">Feito com <span class="heart">&#x2764</span> por Michael Santos</a></p>
+
+        <div class="font">Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    <a href="#" class="back-to-top"><img src="./assets/img/up-arrow.png" alt=""></a>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+<!-- 
+
+<div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+
+ -->

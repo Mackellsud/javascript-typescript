@@ -1,5 +1,5 @@
 .menu {
-    background: var(--white-color);
+    /* background: var(--white-color); */
     border-bottom: 0.1rem solid var(--lite-grey-color);
     position: fixed;
 
@@ -34,6 +34,7 @@
 }
 
 .menu ul li a {
+    color: var(--primary-color);
     display: block;
     font-size: 1.8rem;
     padding: 2rem;
