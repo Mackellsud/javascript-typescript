@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr 2fr); */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid div {
+    background: tomato;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    background-color: blue;
+    grid-column: span 2;
+    /* grid-row: span 2; */
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+}
+

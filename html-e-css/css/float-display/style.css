@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    padding: 20px;
+}
+
+.grid::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    float: left;
+
+    height: 300px;
+    width: 33.33%;
+
+    padding: 20px;
+}
+
+.grid .col-content {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}

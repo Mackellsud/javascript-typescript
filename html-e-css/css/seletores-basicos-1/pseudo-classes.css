@@ -1,0 +1,61 @@
+h1 {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+h1:hover {
+    background-color: chartreuse;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:active {
+    background-color: cadetblue;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 1px solid lightgray;
+    box-shadow: 0 0 2px lightslategray;
+    outline: none;
+}
+
+.check {
+    font-size: 25px;
+}
+
+input:checked + p {
+    background-color: blueviolet;
+    color: aliceblue;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* .father .list li:first-child {
+    background-color: chartreuse;
+}
+
+.father .list li:last-child {
+    background-color: coral;
+} */
+
+p {
+    color: cornflowerblue;
+}
+
+p:not(.meio) {
+    color: black;
+}
+
+ul li:nth-child(2) {
+    background-color: rebeccapurple;
+}

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* p {
+    Unidade de medida absoluta não altera o valor dependente de outros valores
+    font-size: 25px;
+    
+    width: 50%;
+} */
+
+/* .main {
+    Unidade de medida relativa ao elemento pai mais próximo
+    font-size: 50px;
+}
+
+p {
+    font-size: 0.5em;
+} */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* .content-one {
+    background: yellowgreen;
+    height: 15rem;
+    width: 30rem;
+
+    margin: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 1rem;
+} */
+
+.content-one {
+    background: yellowgreen;
+    height: 100vh;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.content-two {
+    background: darkslategrey;
+    height: 100vh;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.content-three {
+    background: darkblue;
+    height: 100vh;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 1rem;
+}
