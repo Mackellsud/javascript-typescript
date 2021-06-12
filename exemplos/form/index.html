@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>FORMULÁRIOS DE OUTRO PLANETA</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <h2>Para que serve?</h2>
+
+    <form action="" method="GET">
+        <!-- http://minhapagina.com/?name=usuario&email=usario@gmail.com -->
+    </form>
+
+    <form action="">
+        <!-- Podemos adicionar um fieldset fora do form porém temos que identificar o ID para fazer o link dos campos -->
+        <fieldset>
+            <legend>Forms</legend>
+            <label for="fname">Nome:</label>
+                <input type="text" name="fname" id="fname" placeholder="Digite seu nome" autofocus required>
+            <label for="fage">Idade:</label>
+            <input type="number" name="fage" id="fage" autofocus required>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset" value="">Resetar Senha</button>
+            <button disabled="disabled">Desativado</button>
+        </fieldset>
+    </form>
+    <input type="text" list="fruitdata" placeholder="Escola uma fruta" />
+            <datalist id="fruitdata">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Mango</option>
+                <option>Orange</option>
+                <option>Cherry</option>
+            </datalist>
+
+    <input type="color" list="colors" placeholder="Escolha uma cor" />
+            <datalist id="colors">
+                <option>#ff0000</option>
+                <option>#00ff00</option>
+                <option>#5c2ede</option>
+                <option>#fabd02</option>
+                <option>#e5e5e5</option>
+                <option>#e55353</option>
+                <option>#464646</option>
+                <option>#55dc54</option>
+            </datalist>
+</body>
+</html>
