@@ -4,6 +4,7 @@ let resEntrada = document.getElementById('numEntrada');
 let valorRes = document.getElementById('resRaiz');
 
 resEntrada.innerHTML += valorEntrada;
+valorRes.innerHTML = '';
 valorRes.innerHTML += `<p>Raiz quadrada: ${valorEntrada ** 0.5}</p>`;
 valorRes.innerHTML += `<p>${valorEntrada} é um número inteiro: ${Number.isInteger(valorEntrada)}</p>`;
 valorRes.innerHTML += `<p>Arredondamento para baixo: ${Math.floor(valorEntrada)}</p>`;
