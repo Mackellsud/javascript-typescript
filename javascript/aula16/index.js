@@ -1,6 +1,6 @@
 // Função básica
 
-function saudacao() {
+/* function saudacao() {
     //alert(`Olá, ${nome}! Seja bem vindo(a).`)
     let nameUser = prompt('Digite seu nome: ')
     let user = document.getElementById('userName')
@@ -16,10 +16,38 @@ function somaValores() {
     let res = Math.cos(cod1) * cod2;
     let soma = document.querySelector('.secure')
 
+    if (soma > 5)
+
     soma.innerHTML = `<strong>${res}</strong>`;
+}       
+
+somaValores(); */
+
+/* function soma(x = 0, y = 0) {
+    const resultado = x + y;
+    return resultado
 }
 
-somaValores();
+const resultado = soma(4, 5);
+console.log(resultado); */
+
+/* const raizQuadrada = function (n) {
+    return n ** 0.5;
+};
+
+Função atribuida a váriavel
+
+console.log(raizQuadrada(9));
+console.log(raizQuadrada(4));
+console.log(raizQuadrada(25)); */
+
+/* Arrow Function */
+
+const raiz = (res) => res ** 0.5;
+
+console.log(raiz(9));
+console.log(raiz(16));
+console.log(raiz(25));
 
 /**
  * Exemplo de função que soma dois valores
