@@ -1,6 +1,6 @@
 function form() {
     const form = document.querySelector('.form');
-    const resultado = document.querySelector('.resultado')
+    const resultado = document.querySelector('.resultado');
 
     const pessoas = [];
 
