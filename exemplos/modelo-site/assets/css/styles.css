@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #AB50F2;
+    --second-color: #8453FC;
+    --link-color: #50A3F2;
+    --background-color: #5A57E6;
+    --text-color: #537DFC;
+}
+
+html {
+    background-image: linear-gradient(45deg, var(--primary-color), var(--second-color));
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    color: var(--link-color);
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu {
+    background: rgb(37, 0, 71);
+    padding: 20px;
+}
+
+.menu-list {
+    border: 1px rgb(238, 102, 5) solid;
+    display: flex;
+    justify-content: right;
+}
+
+.container {
+    background: var(--second-color);
+    opacity: 0.8;
+    background-image: url("/exemplos/modelo-site/assets/img/navigator-result.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding: 100px;
+}
+
+.container h1 {
+    color: black;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container p {
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+}
+
+section {
+    background: white;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+form {
+    background: white;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+/*
+section {
+    border: 1px seashell solid;
+    height: 500px;
+    padding: 50px;
+}
+
+.section {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+*/
